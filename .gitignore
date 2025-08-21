@@ -1,0 +1,19 @@
+# Ignore all HTML files
+*.html
+
+# Ignore assets directory
+assets/
+
+# Ignore any log files
+*.log
+
+# Ignore node_modules if using Node.js
+node_modules/
+
+# Ignore any temporary files
+*.tmp
+*.temp
+
+# Ignore any system files
+.DS_Store
+Thumbs.db
