@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Is Robot?</title>
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .image-container img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    function checkImage(isDog) {
+        if (isDog) {
+            window.location.href = 'success.html';
+        } else {
+            window.location.href = 'failed.html';
+        }
+    }
+</script>
+</head>
+<body>
+    <div style="background-color: #70a9ff; border-radius: 5px; padding-top: 15px; padding-left: 10px; margin-bottom: 10px; width: 300px; height: 80px;">
+        <a style="font-size: 25px; font-weight: bold; color: white;">개</a>
+        <br>
+        <a style="font-size: 15px; color: white;">이(가) 포함된 이미지를 선택하세요.</a>
+    </div>
+    <div>
+        <img src="./assets/m1.png" alt="Muffin" onclick="checkImage(false)" style="width: 100px; height: 100px; cursor: pointer;">
+        <img src="./assets/dog1.png" alt="Muffin" onclick="checkImage(true)" style="width: 100px; height: 100px; cursor: pointer;">
+        <img src="./assets/m2.png" alt="Muffin" onclick="checkImage(false)" style="width: 100px; height: 100px; cursor: pointer;">
+    </div>
+    <div>
+        <img src="./assets/dog2.png" alt="Muffin" onclick="checkImage(true)" style="width: 100px; height: 100px; cursor: pointer;">
+        <img src="./assets/m3.png" alt="Dog" onclick="checkImage(false)" style="width: 100px; height: 100px; cursor: pointer;">
+        <img src="./assets/m4.png" alt="Muffin" onclick="checkImage(false)" style="width: 100px; height: 100px; cursor: pointer;">
+    </div>
+    <div>
+        <img src="./assets/m5.png" alt="Muffin" onclick="checkImage(false)" style="width: 100px; height: 100px; cursor: pointer;">
+        <img src="./assets/m6.png" alt="Muffin" onclick="checkImage(false)" style="width: 100px; height: 100px; cursor: pointer;">
+        <img src="./assets/dog3.png" alt="Muffin" onclick="checkImage(true)" style="width: 100px; height: 100px; cursor: pointer;">
+    </div>
+</head>
+<body>
+</body>
+</html>
